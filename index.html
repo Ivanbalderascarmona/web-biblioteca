@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúmina Digital - Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <h3 class="logo">
+                <span>Lúmina Digital</span>
+            </h3>
+            <div class="imgLogo">
+                <img src="assets/logoBiblioteca.png" alt="Logo Lúmina Digital">
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscador">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Tu librería</a></li>
+                    <li><a href="tienda.html">Compra online</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section class="hero">
+            <h1>Bienvenido a tu biblioteca favorita</h1>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p>Lúmina Digital es una biblioteca moderna que combina tecnología y conocimiento, ofreciendo acceso ilimitado a libros, artículos y revistas.</p>
+                    <p>Nuestra misión es acercar la lectura a todos, promoviendo la educación continua desde cualquier lugar y en cualquier momento.</p>
+                    <p>Colaboramos con editoriales y autores para ofrecer un catálogo actualizado, diverso y adaptado a distintos intereses y edades.</p>
+                    <p>En Lúmina Digital, cada lectura ilumina el camino del aprendizaje, fomentando curiosidad, sostenibilidad y crecimiento personal constante.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/biblioteca.jpg" alt="Interior acogedor de la biblioteca">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section class="featured">
+            <h2>Descubre historias y conocimientos para todos los gustos</h2>
+            <div class="book-carousel">
+                <article class="book-card">
+                    <img src="assets/libro1.webp" alt="Los Dioses del Norte" class="book-cover">
+                    <div class="book-title">Los Dioses del Norte</div>
+                    <div class="book-price">24.99€</div>
+                </article>
+                <article class="book-card">
+                    <img src="assets/libro2.webp" alt="Percy Jackson" class="book-cover">
+                    <div class="book-title">Percy Jackson y el ladrón del Rayo</div>
+                    <div class="book-price">19.99€</div>
+                </article>
+                <article class="book-card">
+                    <img src="assets/libro3.jpg" alt="La Reina Roja" class="book-cover">
+                    <div class="book-title">La Reina Roja</div>
+                    <div class="book-price">14.99€</div>
+                </article>
+                <article class="book-card">
+                    <img src="assets/libro4.jpg" alt="El despertar del Fuego" class="book-cover">
+                    <div class="book-title">El despertar del Fuego Eterno</div>
+                    <div class="book-price">12.99€</div>
+                </article>
+                <article class="book-card">
+                    <img src="assets/libro5.jpg" alt="Libro 5" class="book-cover">
+                    <div class="book-title">Cazadores de Sombras</div>
+                    <div class="book-price">16.50€</div>
+                </article>
+                <article class="book-card">
+                    <img src="assets/libro6.jpg" alt="Libro 6" class="book-cover">
+                    <div class="book-title">El Imperio Final</div>
+                    <div class="book-price">18.90€</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section">
+            <div class="map-container">
+                <!-- Left side visual (map) is handled by CSS background or we can put img here if needed clearer -->
+                <div class="map-visual">
+                  <!-- overlay content if needed -->
+                  <div style="padding: 20px;">
+                      <div class="search-large">
+                          <i class="fas fa-search"></i>
+                          <input type="text" placeholder="Buscador">
+                      </div>
+                      <!-- map image is background -->
+                  </div>
+                </div>
+
+                <div class="store-list">
+                    <h3>Lista de tiendas:</h3>
+                    <div class="store-item">
+                        <p>-Calle Alhambra 12, 18009</p>
+                        <p>Granada, España</p>
+                    </div>
+                    <div class="store-item">
+                      <p>-Avenida Constitución 45,</p>
+                      <p>18014 Granada, España</p>
+                  </div>
+                  <div class="store-item">
+                      <p>-Plaza Nueva 7, 18010</p>
+                      <p>Granada, España</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Column 1: Links -->
+            <div>
+                <p>Política de datos | Cookies | Contact</p>
+            </div>
+            <!-- Column 2: Social -->
+            <div class="social-icons">
+                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <!-- Column 3: Copyright -->
+            <div>
+                <p>© 2025 Lúmina Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const slider = document.querySelector('.book-carousel');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúmina Digital - Compra On-line</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="shop-body">
+
+    <header>
+        <div class="header-top">
+            <h3 class="logo">
+                <span>Lúmina Digital</span>
+            </h3>
+            <div class="imgLogo">
+                <!-- Assuming the user wants the same logo image here -->
+                <img src="assets/logoBiblioteca.png" alt="Logo Lúmina Digital">
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscador">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Tu libreria</a></li>
+                    <li><a href="tienda.html">Compra online</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="shop-layout">
+            <!-- Sidebar Filters -->
+            <aside class="filters">
+                <h3>Filtrar por</h3>
+                <br>
+                <div class="filter-group">
+                    <label><input type="checkbox" checked> Todos los productos</label>
+                    <label><input type="checkbox"> Acción</label>
+                    <label><input type="checkbox"> Aventura</label>
+                    <label><input type="checkbox"> Ciencia</label>
+                    <label><input type="checkbox"> Fantasía</label>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <section class="product-grid-container">
+                <div class="shop-grid">
+                    <!-- Row 1 -->
+                    <article class="book-card">
+                        <img src="assets/libro1.webp" alt="Los Dioses del Norte" class="book-cover">
+                        <div class="book-title">Los Dioses del Norte</div>
+                        <div class="book-category">Libro de ficción de Jera Santamaría</div>
+                        <div class="book-price">10.99€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="assets/libro2.webp" alt="Percy Jackson" class="book-cover">
+                        <div class="book-title">Percy Jackson y el ladrón del rayo</div>
+                        <div class="book-category">Libro de fantasía</div>
+                        <div class="book-price">10.99€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="assets/libro3.jpg" alt="La Reina Roja" class="book-cover">
+                        <div class="book-title">La Reina Roja</div>
+                        <div class="book-category">Libro de fantasía</div>
+                        <span class="offer-badge">En oferta!</span>
+                        <div class="book-price" style="display: flex; gap: 10px; align-items: baseline;">
+                            <span style="text-decoration: line-through; font-size: 0.8rem; color: #888;">19.99€</span>
+                            12.99€
+                        </div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="assets/libro4.jpg" alt="El despertar del Fuego" class="book-cover">
+                        <div class="book-title">El despertar del Fuego Eterno</div>
+                        <div class="book-category">Libro de fantasía</div>
+                        <div class="book-price">15.99€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <!-- Row 2 -->
+                    <article class="book-card">
+                        <img src="assets/libro5.jpg" alt="Inteligencia Artificial" class="book-cover">
+                        <div class="book-title">Inteligencia Artificial</div>
+                        <div class="book-category">Libro de ciencia</div>
+                        <div class="book-price">12.99€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="assets/libro6.jpg" alt="Historia del arte" class="book-cover">
+                        <div class="book-title">Historia del arte</div>
+                        <div class="book-category">Libro de ciencia</div>
+                        <span class="offer-badge">En oferta!</span>
+                        <div class="book-price" style="display: flex; gap: 10px; align-items: baseline;">
+                            <span style="text-decoration: line-through; font-size: 0.8rem; color: #888;">15.99€</span>
+                            10.99€
+                        </div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="assets/libro7.jpg" alt="La trilogía de la Niebla" class="book-cover">
+                        <div class="book-title">La trilogía de la Niebla</div>
+                        <div class="book-category">Libro de fantasía</div>
+                        <div class="book-price">9.99€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="assets/libro8.jpg" alt="En el Reino de la Fantasía" class="book-cover">
+                        <div class="book-title">En el Reino de la Fantasía</div>
+                        <div class="book-category">Libro de fantasía</div>
+                        <div class="book-price">15.99€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <!-- Row 3 (Hidden initially, scroll to see) -->
+                    <article class="book-card">
+                        <img src="assets/libro9.jpg" alt="Detective Comam" class="book-cover">
+                        <div class="book-title">Detective Conan</div>
+                        <div class="book-category">Libro de Ficción</div>
+                        <div class="book-price">16.50€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+
+                    <article class="book-card">
+                        <img src="assets/libro10.webp" alt="La espada de cristal" class="book-cover">
+                        <div class="book-title">La espada de cristal</div>
+                        <div class="book-category">Libro de ficción</div>
+                        <div class="book-price">18.90€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+                    
+                    <article class="book-card">
+                        <img src="assets/libro11.jpg" alt="Percy Jackson El ultimo heroe del olimpo" class="book-cover">
+                        <div class="book-title">Percy Jackson el último héroe del olimpo</div>
+                        <div class="book-category">Libro de fantasía</div>
+                        <div class="book-price">22.00€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+                    
+                    <article class="book-card">
+                        <img src="assets/libro12.jpg" alt="Percy Jackson la maldición del titán" class="book-cover">
+                        <div class="book-title">Percy Jackson la maldición del titán</div>
+                        <div class="book-category">Libro de Fantasía</div>
+                        <div class="book-price">14.50€</div>
+                        <button class="buy-btn">Comprar</button>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Column 1: Links -->
+            <div>
+                <p>Política de datos | Cookies | Contacto</p>
+            </div>
+            <!-- Column 2: Social -->
+            <div class="social-icons">
+                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <!-- Column 3: Copyright -->
+            <div>
+                <p>© 2025 Lúmina Digital</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
